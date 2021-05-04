@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <style type="text/css">
+     button {
+  width: 150px;
+  height: 30px;
+  text-decoration: none;
+  padding-top: 2px;
+  color: #a675b3;
+  text-align: center;
+  line-height: 20px;
+  display: block;
+  margin: 20px auto;
+  font: normal 17px arial;
+}
+
+button:not(.active) {
+  box-shadow: inset 0 1px 1px rgba(111, 55, 125, 0.8), inset 0 -1px 0px rgba(63, 59, 113, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3), 0 4px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #150a1e;
+  background-image: linear-gradient(#3b2751, #271739);
+  text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #311d47;
+}
+
+button:not(.active):hover,
+button:not(.active):focus {
+  transition: color 200ms linear, text-shadow 500ms linear;
+  color: #fff;
+  text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #2a153c;
+}
+button:not(:hover) {
+    transition: 0.6s;
+}
+
+
+
+
+
+
+select {
+position: relative;
+  width: 230px;
+  height: 140px;
+  margin: 20 auto;
+
+}
+
+     </style>
+
+Выбирете период:
+<form method="POST" action="csv">
+    <p><select name="select" size="3" multiple>
+    
+        <option selected value="1">Январь</option>
+        <option value="2021-02-01 09:18:59.000000">Февраль</option>
+        <option value="2021-03-01 09:18:59.000000">Март</option>
+        <option value="2021-04-01 09:18:59.000000">Апрель</option>
+        <option value="2021-05-01 09:18:59.000000">Май</option>
+        <option value="2021-06-01 09:18:59.000000">Июнь</option>
+        <option value="2021-07-01 09:18:59.000000">Июль</option>
+        <option value="2021-08-01 09:18:59.000000">Август</option>
+        <option value="2021-09-01 09:18:59.000000">Сентябрь</option>
+        <option value="2021-10-01 09:18:59.000000">Октябрь</option>
+        <option value="2021-11-01 09:18:59.000000">Ноябрь</option>
+        <option value="2021-12-01 09:18:59.000000">Декабрь</option>
+       
+      
+       
+       
+       
+       По:
+       </select>
+          <p><select name="select2" size="3" multiple>
+        <option selected value="2020-12-31 09:18:59.000000">Январь</option>
+        <option value="2">Февраль</option>
+        <option value="2021-02-28 09:18:59.000000">Март</option>
+        <option value="2021-03-31 09:18:59.000000">Апрель</option>
+        <option value="2021-04-30 09:18:59.000000">Май</option>
+        <option value="2021-05-31 09:18:59.000000">Июнь</option>
+        <option value="2021-06-30 09:18:59.000000">Июль</option>
+        <option value="2021-07-31 09:18:59.000000">Август</option>
+        <option value="2021-08-31 09:18:59.000000">Сентябрь</option>
+        <option value="2021-09-30 09:18:59.000000">Октябрь</option>
+        <option value="2021-10-31 09:18:59.000000">Ноябрь</option>
+        <option value="2021-11-30 09:18:59.000000">Декабрь</option>
+       </select>
+  
+    <input type="submit" value="Выгрузить" />
+    
+</form>
+
+
+ </body>
+</html>
